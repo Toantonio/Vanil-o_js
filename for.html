@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR</title>
+
+    <script>
+        /*for (inicialização ;Condição; encremento){}
+        for (variavel cont; cont < que um valor ; cont recebe + 1) */
+
+       /* for(let cont = 0; cont < 10; cont ++){
+            console.log("oi" + cont)
+        }*/
+
+        let nome = [" joão","maria","carlos","jose"]
+        nome.push("rebeca") /*Push adiciona ao arrey*/
+        console.log(nome)
+        console.log(nome[3])
+        console.log(nome[nome.length - 1])/*mostra a posisão anterior */
+
+
+        nome.push("to")
+        nome.push("rafa")
+        nome.push("miguel")
+        nome.push(" ana")
+        console.log(nome)
+        /*console.log(nome.length - 1)*/
+        console.log("----------------")
+        /*console.log(nome[nome.length -1])*/
+        let ultimo = nome.pop()
+        console.log("ultimo" + ultimo )
+        let inicio = nome.shift() /*remove o primeiro da lista*/
+        console.log(nome)
+        console.log("inicio" + inicio )
+        console.log("----------------")
+       
+        nome.pop()//*remove o ultimo da lista*/
+        console.log(nome)
+        for (let i = 0 ; i < 9; i++){
+            console .log(nome[i])
+        }
+      
+    </script>
+</head>
+<body>
+    <h1>For</h1>
+</body>
+</html>
