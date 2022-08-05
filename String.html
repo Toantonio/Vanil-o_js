@@ -1,60 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script>
-      let nome = ["joão","maria","carlos","jose"]
-        nome.push("rebeca") /*Push adiciona ao arrey*/
-        console.log(nome)
-        console.log(nome[3])
-        console.log(nome[nome.length - 2])/*mostra a posisão anterior */
+<html>
+    <head>
+        <script>
+            let nome = "virmerson";
+            let sobreNome = "Bento dos Santos";
+            //let sobreNome = ["b", "e", "n", "t", "o"];
+            let notas = [10, 9.5, 5];
+            let empresa = "High Tec  Cursos";
+            let curso = "Fabrica de programador";
+            let = idade = 38;
 
 
-        nome.push("to")
-        nome.push("rafa")
-        nome.push("miguel")
-        nome.push("ana")
-        console.log(nome)
-        console.log(nome.length - 2)
+            //dessa duas forma mostra a posição no array
+            console.log(nome.charAt(3));
+            //console.log(sobreNome.charAt(3));
+            console.log(nome.indexOf('m'));
+            console.log(nome.indexOf('t'));
 
 
-        /*for contador recebe 0 ;contador menor q 10 
-        ; contador recebe contador adiciona mais 1*/
-        for (let cont = 0; cont < 10; cont = cont + 1){
-           console.log("oi " + cont) 
-        }
+            console.log("-----------------");
+
+            let letra = nome.charAt(3);
+            console.log(letra)
+            console.log(nome.indexOf(letra));
 
 
+            //concatena duas ou mais string
 
+            console.log(nome.concat(' ',sobreNome));
 
-
-
-
-    /*let nome = "Fabrica de Programador"*/
-/*
-console.log(nome)
-console.log(nome[0])
-console.log(nome[1])
-console.log(nome[2])
-
-
-nome[0] = "antonio"
-console.log(nome[0])*/
-
-console.log(nome.length) /*length mostra tudo o que a no arrey*/
+            console.log("esta e uma pergunta?".endsWith("?"))//verifica com o que termina e da verdadeiro ou falso
 
 
 
 
 
-       
-    </script>
-</head>
-<body>
-    <h1>oi</h1>
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+            //console.log(nome + "-" + empresa + "-" + curso + "-" + idade)  //pode ser feito assim */
+
+            //console.log(`
+            //nome: ${nome}
+            // Empresa:${empresa} 
+            //- ${curso} - ${idade}`)
+            //dessa forma aceita q quebre a linha mostrando no tela final
+
+
+            /*console.log(nome);
+            console.log(typeof nome);/*mostra o tipo de variavel
+            console.log(nome.length);
+            console.log(nome[0]);mostra a letra q ta na posição 0
+            console.log(nome[nome.length - 1])/*mostra a letra q ta na posição -1 
+
+            console.log(sobreNome[0]);
+            console.log(sobreNome.length);
+            console.log(sobreNome)*/
+        </script>
+    </head>
+    <body>
+        <h1>oi</h1>
+    </body>
 </html>
