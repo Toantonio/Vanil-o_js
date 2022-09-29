@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+            function somar (n1, n2, f){
+                let r = n1 + n2;
+                f(r);
+                return r;
+                console.log(r)
+                //console.log(`n1: ${n1} n2: ${n2}`)
+            }
+            //let ImprimirConsole  = function (saida){
+             //   console.log("saida imprime console: " + saida)
+            //}
+
+            //let MensagemAlert = function (saida){
+            //    window.alert(saida)
+           // }
+            //let s1 = somar (40, 40, ImprimirConsole);
+            //let s2 = somar (50, 50, ImprimirConsole);
+            //let s3 = somar (50, 55, MensagemAlert);
+
+            //let s4 = somar (50, 60, function (saida){
+              //  document.write(saida)
+            //})
+            //let s5 = somar (40, 40, function(saida){
+              //  document.write(saida)
+            //}) 
+            //let s6 = somar (50, 65,(saida) =>  { //eroufunction
+             //   console.log(saida)
+            //    window.alert(saida)
+            //})
+            let s7 = somar (40,67, saida => console.log(saida));//modelo simplificado de chamar função
+
+            function subtrair (n1,n2){
+                return  n1 - n2;
+            }
+
+            let subtrair2 = function (n1, n2){
+                return n1 - n2
+            }
+             let sub = subtrair(10, 5)
+             console.log(`sub: ${sub}`)
+
+             let sub2 = subtrair (40, 20);
+             console.log(`sub2: ${sub2}`)
+
+             let sub3 = subtrair (40, 20);
+             console.log(`sub3: ${sub3}`)
+  
+        </script>
+    </head>
+    <body>
+        <h1>function</h1>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+
+
+<head>
+    <script>
+       
+        function calcMedia (  nota1 ,nota2 ){
+            return (nota1 + nota2) /  2;
+        }
+        function situacao(nota1,nota2){
+            let media = calcMedia(nota1,nota2);
+            if (media = 8){//com o valor e a mensagem
+                return{mensagem: "Aprovado",
+                media:media
+            }               
+            }else if(media<=4 && media<7){//sem o valor so com a mensagem
+                return "RECUPERAÇÂO";
+            }else{
+                return "REPROVADO";
+            }
+        }
+        let s = situacao(1+5,9)
+        console.log(s.media + "  " + s.mensagem)
+    </script>
+
+</head>
+
+ <body>
+    
+ </body>
+
+
+</html>
